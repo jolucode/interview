@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: ${DB_URL:r2dbc:postgresql://localhost:5432/practica}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD}
+    pool:
+      initial-size: 0
+      max-size: 10
+      max-acquire-time: 5s
+  sql:
+    init:
+      mode: never

@@ -1,3 +1,10 @@
 spring:
   application:
     name: interview
+---
+spring:
+  config:
+    activate:
+      on-profile: "!postgres"
+  autoconfigure:
+    exclude: org.springframework.boot.r2dbc.autoconfigure.R2dbcAutoConfiguration
