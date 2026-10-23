@@ -1,3 +1,3 @@
 package com.interview.practice.model;
 
-public record Cliente(Long id, String nombre) {}
+public record Cliente(Long id, String nombre, String email) {}

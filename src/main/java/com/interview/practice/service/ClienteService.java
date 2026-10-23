@@ -9,6 +9,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 public class ClienteService {
+
     private final ClienteRepository repository;
 
     public ClienteService(ClienteRepository repository) {
@@ -27,3 +28,19 @@ public class ClienteService {
                 new RecursoNoEncontradoException("No existe el cliente: " + id)));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

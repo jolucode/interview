@@ -26,6 +26,7 @@ public class ClienteController {
 
     @GetMapping("/{id}")
     public Mono<Cliente> obtenerCliente(@PathVariable("id") Long id) {
+
         return clienteService.obtenerCliente(id);
     }
 
